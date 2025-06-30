@@ -13,8 +13,24 @@
 
 <label for="filter">Filter nach Kategorie:</label>
 <select id="filter" onchange="filterItems()">
-    <option value="all">Alle</option>
+    <option value="Alle">Alle</option>
+    <option value="Admin">Admin</option>
+    <option value="Normal">Normal</option>
+    <option value="Rare">Rare</option>
 </select>
+
+<table>
+    <thead>
+    <tr>
+        <th>Item</th>
+        <th>Kategorie</th>
+        <th>Wert</th>
+    </tr>
+    </thead>
+    <tbody id="itemTable">
+    <!-- Items werden hier dynamisch eingefügt -->
+    </tbody>
+</table>
 
 
 <footer>
